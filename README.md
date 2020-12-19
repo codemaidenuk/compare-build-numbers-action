@@ -36,7 +36,7 @@ will cause the pipeline to **fail**. This is because `1.0.0 > 1.0.1` is `false`.
 *Note: This action is intended to be combined with other actions that will retrieve your build numbers dynamically. Replace the values for `build-a` and `build-b` with your actual build numbers.*
 
 ```yaml
-uses: codemaidenuk/compare-build-numers-action@v1
+uses: codemaidenuk/compare-build-numbers-action@v1
 with:
   build-a: '1.0.0'
   build-b: '1.0.1'
