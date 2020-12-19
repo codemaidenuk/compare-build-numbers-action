@@ -10,6 +10,6 @@ inputs:
   pass-if:
     description: 'The comparator that causes this action to pass.'
     required: true
-  runs:
-    using: 'node12'
-    main: 'app.js'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
