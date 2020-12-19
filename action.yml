@@ -1,0 +1,15 @@
+name: 'Compare Build Numbers'
+description: 'Compares two semver build numbers.'
+inputs:
+  build-a: # First build.
+    description: 'The first build number.'
+    required: true
+  build-b:
+    description: 'The second build number.'
+    required: true
+  pass-if:
+    description: 'The comparator that causes this action to pass.'
+    required: true
+  runs:
+    using: 'node12'
+    main: 'app.js'
