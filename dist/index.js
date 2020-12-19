@@ -43,7 +43,7 @@ try {
       return eval(semver.gte(buildA, buildB))
     case '>':
     case 'ge':
-      return eval(semver.ge(buildA, buildB))
+      return eval(semver.gt(buildA, buildB))
     default:
       throw new Error(`The comparator you provided (${passIf}) is not valid. Please check the actions description for valid comparators.`)
   }
